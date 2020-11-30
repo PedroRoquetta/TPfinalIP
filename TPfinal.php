@@ -1,4 +1,5 @@
 <?php
+
 /******************************************
 *Completar:
 * NOMBRE Y APELLIDOS - LEGAJOS
@@ -291,9 +292,9 @@ function stringLetrasDescubiertas($coleccionLetras){ //punto 13(probar)
     
     foreach ($coleccionLetras as $indice => $valor) {
         if ($valor["descubierta"] == (!$valor)) {
-            $pal=$pal.($valor["letra"]);
+            $pal = $pal. ("*");
         }else {
-            $pal = $pal.("*");
+            $pal=$pal.($valor["letra"]);
         }
     }
     return $pal;
